@@ -13,7 +13,7 @@ class API {
      * @return
      */
     public function api() {
-        return '趣';
+        return ['xing' => '趣'];
 
     }
 

@@ -13,7 +13,7 @@ class API {
      * @return
      */
     public function api() {
-        return '炒股';
+        return ['name' => '炒股'];
     }
 
     protected function client_can_not_see() {

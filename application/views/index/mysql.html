@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mysql</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>用户</th>
+        <th>密码</th>
+        <th>host</th>
+    </tr>
+    <?php
+         foreach($data as $value) {
+            echo "<tr>
+                <td>{$value['User']}</td>
+                <td>{$value['Password']}</td>
+                <td>{$value['Host']}</td>
+                </tr>";
+         }
+    ?>
+</table>
+
+</body>
+</html>
