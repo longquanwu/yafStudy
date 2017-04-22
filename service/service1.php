@@ -14,7 +14,6 @@ class API {
      */
     public function api() {
         return ['xing' => '趣'];
-
     }
 
     protected function client_can_not_see() {

@@ -10,8 +10,8 @@ function callback($retval, $callinfo) {
     $retval = is_array($retval) ? $retval : [];
     global $msg;
     $msg = array_merge($msg, $retval);
-    if ($msg['header'] && $msg['footer']) {
-        echo $msg[''] . $msg['name'];
+    if (isset($msg['xing']) && isset($msg['name'])) {
+        echo $msg['xing'] . $msg['name'];
     }
 }
 
@@ -23,7 +23,13 @@ function error_callback($type, $error, $callinfo) {
 
 class IndexController extends Yaf_Controller_Abstract {
 
-    public function indexAction() {//默认Action
+    public function indexAction() {
+        $this->getView()->assign("name", "趣炒股");
+        $this->getView()->assign("time", date('Y-m-d H:i:s'));
+        $this->getView()->assign("content", "Hello World");
+    }
+
+    public function infoAction() {//默认Action
         $this->getView()->assign("content", "Hello World");
         phpinfo();
     }

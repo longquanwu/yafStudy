@@ -17,6 +17,9 @@ class Bootstrap extends Yaf_Bootstrap_Abstract{
         Yaf_Registry::set("config", $config);
     }
 
+    public function _initRun() {
+    }
+
     public function _initDefaultName(Yaf_Dispatcher $dispatcher) {
         $dispatcher->setDefaultModule("Index")->setDefaultController("Index")->setDefaultAction("index");
     }

@@ -1,3 +1,5 @@
 # Idea
 .idea
 
+public/node_modules/
+public/npm-debug.log

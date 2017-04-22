@@ -5,7 +5,6 @@
  * Time: 2017/4/18  19:56
  */
 
-ini_set("display_errors", "off");
 class API {
     /**
      * the doc info will be generated automatically into service info page.
